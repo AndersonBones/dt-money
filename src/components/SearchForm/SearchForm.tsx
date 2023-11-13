@@ -5,6 +5,7 @@ import * as z from 'zod'
 import {useContext} from 'react'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { TransactionContext } from "../../context/TransactionContext"
+import {memo} from 'react'
 
 const searchFormSchema = z.object({
     query:z.string()
@@ -13,7 +14,7 @@ const searchFormSchema = z.object({
 type SearchFormUnputs = z.infer<typeof searchFormSchema>
 
 
-export const SearchForm = () => {
+const SearchFormComponent = () => {
     const {getTransactions, transactions} = useContext(TransactionContext)
 
     const {register, handleSubmit, formState:{isSubmitting}} = useForm<SearchFormUnputs>({
@@ -48,3 +49,5 @@ export const SearchForm = () => {
         </SearchFormContainer>
     )
 }
+
+export const SearchForm = memo(SearchFormComponent)
