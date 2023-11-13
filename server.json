@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Compra",
+      "price": 1400,
+      "createdAt": "2023-11-12T03:32:53.695Z"
+    },
+    {
+      "id": 2,
+      "description": "Desenvolvimento de site",
+      "type": "outcome",
+      "category": "Venda",
+      "price": 300,
+      "createdAt": "2023-11-12T03:32:53.695Z"
+    },
+    {
+      "description": "netflix",
+      "category": "entretenimento",
+      "price": 59,
+      "type": "outcome",
+      "createdAt": "2023-11-12T22:28:25.900Z",
+      "id": 3
+    },
+    {
+      "description": "udemy",
+      "category": "compra",
+      "price": 60,
+      "type": "outcome",
+      "createdAt": "2023-11-12T22:44:32.199Z",
+      "id": 4
+    }
+  ]
+}
