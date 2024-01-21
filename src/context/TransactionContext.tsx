@@ -50,7 +50,7 @@ export const TransactionsProvider = ({children}:TransactionProviderProps)=>{
     const createTransaction =async (data:CreateTransaction) => {
         const {category, description, price, type} = data
 
-        const newTransaction = await api.post('transactions',{
+        const newTransaction = await api.post('/transactions',{
             description,
             category,
             price,
