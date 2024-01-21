@@ -1,14 +1,18 @@
-import { HeaderContainer, HeaderContent } from "./styles"
+import { HeaderContainer, HeaderContent, LogoIcon } from "./styles"
 
-import logoImg from '../../assets/Ignite simbol.svg'
+
 import * as Dialog from "@radix-ui/react-dialog"
 import { TransactionModal } from "../TransactionModal/TransactionModal"
+import { CurrencyCircleDollar } from "phosphor-react"
 
 export const Header = ()=>{
     return (
         <HeaderContainer>
             <HeaderContent className="container">
-                <img src={logoImg} alt="" />
+                <LogoIcon>
+                    <CurrencyCircleDollar size={50}></CurrencyCircleDollar>
+                    DT.Money
+                </LogoIcon>
 
                 <Dialog.Root >
                     <Dialog.Trigger asChild>

@@ -33,3 +33,8 @@ export const HeaderContent = styled.div`
         }
     }
 `
+
+export const LogoIcon = styled.span`
+    color: ${props=>props.theme['green-500']};
+    font-weight: 600;
+`
