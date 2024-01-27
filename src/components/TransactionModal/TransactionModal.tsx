@@ -27,7 +27,7 @@ export const TransactionModal = () => {
         register,
         handleSubmit,
         formState: { isSubmitting },
-        reset
+        //reset
     } = useForm<ModalTransactionFormUnputs>({
         resolver: zodResolver(modalFormSchema)
     })
@@ -36,7 +36,7 @@ export const TransactionModal = () => {
         const {description, price, category, type} = data;
         
         await createTransaction({description, price, category, type})
-        reset()
+        //reset()
     }
 
     return (
@@ -90,7 +90,7 @@ export const TransactionModal = () => {
                         }}
                     />
 
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit" disabled={isSubmitting}>Cadastrar</button>
                 </form>
 
             </Content>
