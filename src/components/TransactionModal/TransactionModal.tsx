@@ -90,7 +90,7 @@ export const TransactionModal = () => {
                         }}
                     />
 
-                    <button type="submit" disabled={isSubmitting}>Cadastrar</button>
+                    <button type="submit">Cadastrar</button>
                 </form>
 
             </Content>
